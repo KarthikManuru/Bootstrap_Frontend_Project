@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the rich heritage of Indian historical art through our comprehensive gallery">
+    <title>Indian Historical Art Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image.jpg" alt="Logo" class="d-inline-block align-text-top">
+                ChitraKosh 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exhibitions">Exhibitions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero-section">
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="display-3 fw-bold">Indian Historical Art Gallery</h1>
+            <p class="lead">Discover the Rich Heritage of Indian Art Through Centuries</p>
+            <a href="#gallery" class="btn btn-outline-light btn-lg mt-4">Explore Gallery</a>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-card text-center">
+                        <i class="fas fa-palette fa-3x mb-3"></i>
+                        <h3>Classical Art</h3>
+                        <p>Explore traditional Indian paintings and sculptures</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-card text-center">
+                        <i class="fas fa-landmark fa-3x mb-3"></i>
+                        <h3>Heritage</h3>
+                        <p>Discover India's rich artistic heritage</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="featured-card text-center">
+                        <i class="fas fa-history fa-3x mb-3"></i>
+                        <h3>Timeline</h3>
+                        <p>Journey through artistic evolution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal1">
+                        <img src="https://s.ecrater.com/stores/228673/5a546091925c9_228673b.jpg" class="img-fluid" alt="Art 1">
+                        <div class="gallery-overlay">
+                            <h5>Mughal Miniature</h5>
+                            <p>18th Century</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal2">
+                        <img src="https://sothebys-com.brightspotcdn.com/dims4/default/4c1547c/2147483647/strip/true/crop/4953x7049%2B0%2B0/resize/2880x4096%21/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fdotcom%2F0b%2F9f%2F9ba8e116462abddef46d8746887c%2Fancient-sculpture-slide9.jpg" class="img-fluid" alt="Art 2">
+                        <div class="gallery-overlay">
+                            <h5>Ancient Sculpture</h5>
+                            <p>10th Century</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal3">
+                        <img src="https://webneel.com/daily/sites/default/files/images/daily/07-2019/3-rajasthani-painting-artwork-woman-dance-mmenterprises28.jpg" class="img-fluid" alt="Art 3">
+                        <div class="gallery-overlay">
+                            <h5>Rajasthan Painting</h5>
+                            <p>17th Century</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+               
+                <!-- Repeat for more gallery items -->
+                <!-- Gallery Modal -->
+                <div class="modal fade" id="galleryModal1" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Mughal Miniature</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://source.unsplash.com/800x600/?indian,art" class="img-fluid" alt="Art 1">
+                                <div class="mt-4">
+                                    <h6>About this Artwork</h6>
+                                    <p>Detailed description of the artwork...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Art History Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h4>Ancient Period (2500 BCE - 600 CE)</h4>
+                        <p>The foundation of Indian art, including the Indus Valley civilization...</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h4>Classical Period (600 CE - 1200 CE)</h4>
+                        <p>The golden age of Indian art with magnificent temple architecture...</p>
+                    </div>
+                </div>
+                <!-- More timeline items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Spotlight -->
+    <section id="artists" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Featured Artists</h2>
+            <div class="swiper artist-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="artist-card">
+                            <img src="https://i.redd.it/2fotzwoziq761.jpg" alt="Artist">
+                            <div class="artist-info">
+                                <h4>Raja Ravi Varma</h4>
+                                <p>19th Century Master</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="artist-card">
+                            <img src="https://www.christies.com/img/LotImages/2020/NYR/2020_NYR_19015_0518_002%28jamini_roy_untitled041004%29.jpg?mode=max" alt="Artist">
+                            <div class="artist-info">
+                                <h4>Jamini Roy</h4>
+                                <p>Bengal School of Art</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="artist-card">
+                            <img src="https://elephant.art/wp-content/uploads/2020/10/USG_44.jpg" alt="Artist">
+                            <div class="artist-info">
+                                <h4>Amrita Sher-Gil</h4>
+                                <p>Modern Indian Art Pioneer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="artist-card">
+                            <img src="https://images.squarespace-cdn.com/content/v1/61a76dee225b8d381c48c4f4/ecbf3d7d-5760-4efa-a68c-357b41091d8e/abanindranath%2Btagore%2Bartist%2BProfile.jpeg" alt="Artist">
+                            <div class="artist-info">
+                                <h4>Abanindranath Tagore</h4>
+                                <p>Father of Modern Indian Painting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="artist-card">
+                            <img src="https://mapacademy.io/wp-content/uploads/2022/06/nandalal-bose-sati-3s_auto_x2.jpg" alt="Artist">
+                            <div class="artist-info">
+                                <h4>Nandlal Bose</h4>
+                                <p>Famous for Traditional Folk Art</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+                    <!-- More artist slides -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibition Schedule -->
+    <section id="exhibitions" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Current Exhibitions</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="exhibition-card">
+                        <div class="exhibition-header">
+                            <h4>Classical Sculptures</h4>
+                            <span class="badge bg-primary">Ongoing</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%">70%</div>
+                        </div>
+                        <p class="mt-3">Experience the magnificence of classical Indian sculptures</p>
+                        <button class="btn btn-outline-primary">Learn More</button>
+                    </div>
+                </div>
+                <!-- More exhibition cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="zoom-in">
+                    <div class="newsletter-content text-center">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <p>Stay updated with our latest exhibitions and events</p>
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <button class="btn btn-primary" type="submit">
+                                    Subscribe <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="contact-info mb-4">
+                        <h4>Get in Touch</h4>
+                        <p>Have questions? We'd love to hear from you.</p>
+                        <div class="contact-details">
+                            <p><i class="fas fa-map-marker-alt me-2"></i> 123 Art Street, Mumbai, India</p>
+                            <p><i class="fas fa-phone me-2"></i> +91 123 456 7890</p>
+                            <p><i class="fas fa-envelope me-2"></i>indianartgallery@gmail.com</p>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Please enter your name</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Please enter a valid email</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                            <div class="invalid-feedback">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message <i class="fas fa-paper-plane ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8087553702547!2d72.8553!3d19.0748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzI5LjMiTiA3MsKwNTEnMTkuMSJF!5e0!3m2!1sen!2sin!4v1635835340000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>About Us</h5>
+                    <p>Dedicated to preserving and showcasing India's rich artistic heritage through centuries of evolution and cultural significance.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
+                        <li><a href="#artists">Artists</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Indian Art Gallery. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
